@@ -1,4 +1,5 @@
 # The Go Programming Language
+# 这是《go 语言圣经》书中的代码例子
 
 This repository provides the downloadable example programs
 for the book, "The Go Programming Language"; see http://www.gopl.io.
