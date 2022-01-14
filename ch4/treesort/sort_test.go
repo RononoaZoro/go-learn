@@ -4,6 +4,7 @@
 package treesort_test
 
 import (
+	"fmt"
 	"math/rand"
 	"sort"
 	"testing"
@@ -20,4 +21,9 @@ func TestSort(t *testing.T) {
 	if !sort.IntsAreSorted(data) {
 		t.Errorf("not sorted: %v", data)
 	}
+	fmt.Printf("%v\n", data)
+}
+
+func main() {
+	TestSort()
 }

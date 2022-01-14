@@ -14,6 +14,9 @@ import (
 	"golang.org/x/net/html"
 )
 
+//go build ch1/fetch
+//fetch.exe http://golang.org | findlinks1.exe
+//上面表示前面的输出作为后面的输入
 func main() {
 	doc, err := html.Parse(os.Stdin)
 	if err != nil {

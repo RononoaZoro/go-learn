@@ -34,7 +34,7 @@ func daysAgo(t time.Time) int {
 //!-daysAgo
 
 //!+exec
-var report = template.Must(template.New("issuelist").
+var report = template.Must(template.New("111").
 	Funcs(template.FuncMap{"daysAgo": daysAgo}).
 	Parse(templ))
 
