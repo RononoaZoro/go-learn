@@ -68,6 +68,7 @@ func (s *IntSet) String() string {
 	}
 	buf.WriteByte('}')
 	return buf.String()
+
 }
 
 //!-string
