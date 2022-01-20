@@ -29,12 +29,17 @@ func main() {
 
 	//!+
 	fmt.Println("Commencing countdown.  Press return to abort.")
+	countdown := 0
 	select {
 	case <-time.After(10 * time.Second):
 		// Do nothing.
+		fmt.Println(countdown)
 	case <-abort:
 		fmt.Println("Launch aborted!")
 		return
+	default:
+		countdown++
+		fmt.Println(countdown)
 	}
 	launch()
 }
