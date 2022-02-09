@@ -13,6 +13,7 @@ import (
 	"fmt"
 	"image"
 	"image/jpeg"
+
 	_ "image/png" // register PNG decoder
 	"io"
 	"os"
